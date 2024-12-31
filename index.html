@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Piezas</title>
 </head>
 <body>
-    <h1>Begin</h1>
+    <div class="container">
+        <h1>Welcome to Piezas</h1>
+        <button id="createElement">Create Element</button>
+        <button id="saveDesign">Save design</button>
+    </div>
+
+    <script>
+        document.getElementById('createElement').addEventListener('click', ()=>{
+            alert('Create element clicked!');
+        })
+
+        document.getElementById('saveDesign').addEventListener('click', ()=>{
+            alert('Save Design clicked!');
+        })
+    </script>
 </body>
 </html>
