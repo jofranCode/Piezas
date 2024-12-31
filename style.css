@@ -9,14 +9,14 @@ body{
     background-color: #f4f4f4;
 }
 
+/* Container */
+
 .container{
-    width: 80%;
-    height: 80%;
+    display: flex;
+    flex-grow: 1;
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -34,4 +34,27 @@ button{
 
 button:hover{
     background-color: #0056b3;
+}
+
+/* Toolbar */
+.toolbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.toolbar button{
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toolbar button:hover{
+    background-color: #007BFF;
 }

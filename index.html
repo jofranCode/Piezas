@@ -7,20 +7,30 @@
     <title>Piezas</title>
 </head>
 <body>
+    <!-- Container -->
     <div class="container">
         <h1>Welcome to Piezas</h1>
-        <button id="createElement">Create Element</button>
-        <button id="saveDesign">Save design</button>
     </div>
+    
+    <!-- Toolbar -->
+     <div class="toolbar">
+        <button id="newElement">New Element</button>
+        <button id="saveDesign">Save design</button>
+        <button id="loadDesign">Load design</button>
+     </div>
 
     <script>
-        document.getElementById('createElement').addEventListener('click', ()=>{
+        document.getElementById('newElement').addEventListener('click', ()=>{
             alert('Create element clicked!');
-        })
+        });
 
         document.getElementById('saveDesign').addEventListener('click', ()=>{
             alert('Save Design clicked!');
-        })
+        });
+
+        document.getElementById('loadDesign').addEventListener('click', ()=>{
+            alert('Load design clicked!');
+        });
     </script>
 </body>
 </html>
